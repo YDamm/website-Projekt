@@ -1,6 +1,6 @@
 <?php
 // Upload Pfad
-if(!is_dir(uploads) {
+if(!is_dir('uploads') {
     mkdir('uploads');
 }
 $target_dir = "uploads/";
