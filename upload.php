@@ -1,12 +1,8 @@
 <?php
 // Upload Pfad
-if(!is_dir(uploads) {
-    mkdir('uploads');
-}
 $target_dir = "uploads/";
 $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
 $uploadOk = 1;
-
 $FileType = strtolower(pathinfo($target_file, PATHINFO_EXTENSION));
 
 // Überprüfen, ob die Datei bereits exitiert
@@ -32,7 +28,7 @@ if ($uploadOk == 0) {
     if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
         echo "Die Datei " . htmlspecialchars(basename($_FILES["fileToUpload"]["name"])) . " wurde erfolgreich hochgeladen.";
 	header('Location: datenseite.php');
-        exit();
+        die;
     } else {
         echo "Ein Fehler ist aufgetreten. ";
     }
