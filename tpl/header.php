@@ -9,6 +9,7 @@
       <meta name="author" content="Farhad Nateghi, Yannis Damm, Mortiz Laleik">
       <meta name="generator" content="Hugo 0.79.0">
       <title>Händler Startseite</title>
+      <link rel="stylesheet" href="css/bootstrap.css">
       <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
       <link href="css/main.css" rel="stylesheet">
       <script src="js/main.js"></script>
