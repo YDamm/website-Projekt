@@ -1,18 +1,8 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
-                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="btn btn-outline-success" aria-current="page" href="index.php">Home</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="btn btn-outline-success" aria-current="page" href="datenseite.php">Daten</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+  <!-- Site Navigation -->
+  <div class="topnav" id="myTopnav">
+  <a href="index.php" class="active">Home</a>
+  <a href="datenseite.php">Artikel</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
