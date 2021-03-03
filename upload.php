@@ -36,6 +36,10 @@ if ($uploadOk == 0) {
 
 $conn = mysqli_connect("localhost", "root", "", "db_händler");
 
+$sqldel = "TRUNCATE TABLE tb_artikel";
+
+mysqli_query($conn, $sqldel);
+
 $affectedRow = 0;
 
 $xml = simplexml_load_file("./uploads/daten.xml") or die("Error: Cannot create object");
@@ -45,10 +49,10 @@ foreach ($xml->children() as $row) {
     $name = $row->name;
     $match = $row->match;
     $vpe = $row->vpe;
+ 
+    $sqlwrite = "INSERT INTO tb_artikel(artikelnummer,mengeneinheit,artikelbezeichnung,vpe) VALUES ('" . $art_nr . "','" . $name . "','" . $match . "','" . $vpe . "')";
 
-    $sql = "INSERT INTO tb_artikel(artikelnummer,mengeneinheit,artikelbezeichnung,vpe) VALUES ('" . $art_nr . "','" . $name . "','" . $match . "','" . $vpe . "')";
-
-    $result = mysqli_query($conn, $sql);
+    $result = mysqli_query($conn, $sqlwrite);
 
     if (!empty($result)) {
         $affectedRow++;
