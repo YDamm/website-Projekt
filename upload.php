@@ -33,12 +33,26 @@ if ($uploadOk == 0) {
         echo "Ein Fehler ist aufgetreten. ";
     }
 }
+
+$conn = mysqli_connect("localhost", "root", "", "db_händler");
+
+$affectedRow = 0;
+
 $xml = simplexml_load_file("./uploads/daten.xml") or die("Error: Cannot create object");
-$objJsonDocument = json_encode($xml);
-$arrOutput = json_decode($objJsonDocument, true); 
-echo "<pre>";
-print_r($arrOutput);
-$sql = "INSERT INTO tb_artikel(artikelnummer)
-      VALUES('$objJsonDocument')
-      ";
-?>
+
+foreach ($xml->children() as $row) {
+    $art_nr = $row->art_nr;
+    $name = $row->name;
+    $match = $row->match;
+    $vpe = $row->vpe;
+
+    $sql = "INSERT INTO tb_artikel(artikelnummer,mengeneinheit,artikelbezeichnung,vpe) VALUES ('" . $art_nr . "','" . $name . "','" . $match . "','" . $vpe . "')";
+
+    $result = mysqli_query($conn, $sql);
+
+    if (!empty($result)) {
+        $affectedRow++;
+    } else {
+        $error_message = mysqli_error($conn) . "\n";
+    }
+}
