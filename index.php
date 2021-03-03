@@ -2,17 +2,53 @@
 
 <body>
     <?php INCLUDE_ONCE("tpl/nav.php") ?>
-    <form action="db/db.php" method="get" target="_blank">
-        <button type="submit">Datenbank erstellen</button>
-    </form>
-    <br>
+    <div class="container center">
+	<div class="row">
+		<div class="col-md-12">
+			<h1 class="white">Datenbank erstellen</h1>
+		</div>
+	</div>
+		<div class="row">
+			<div class="col-md-6 col-md-offset-3 center">
+				<div class="btn-container">
+                    <br>
+					<p id="namefile">Beim Klicken auf dem Button, wird die Datenbank angelegt</p>
+                    <br>
+                    <button class="btn btn-primary"><a href="db/db.php" target="_blank" style="color:white;">erstellen</a></button>
+				</div>
+			</div>
+		</div>
     <!-- upload Formulare -->
-        <form action="./upload.php" method="post" enctype="multipart/form-data">
-            <p>XML-Datei für den Upload: (max. 5MB)</p>
-                <input type="file" name="fileToUpload" id="fileToUpload">
-                <input type="submit" value="Upload File" name="file">
-        </form>
+    <div class="container center">
+	<div class="row">
+		<div class="col-md-12">
+			<h1 class="white">Datei hochladen</h1>
+		</div>
+	</div>
+	
+	<form method="post" action="./upload.php" enctype="multipart/form-data" accept-charset="utf-8">
+		<div class="row">
+			<div class="col-md-6 col-md-offset-3 center">
+				<div class="btn-container">
+                    <br>
+					<p id="namefile">Nur XML Datei ist erluabt (.xml)</p>
+                    <br>
+					<!--this is the actual file input, is set with opacity=0 beacause we wanna see our custom one-->
+					<input type="file" name="fileToUpload" id="fileToUpload">
+				</div>
+			</div>
+		</div>
+			<!--additional fields-->
+		<div class="row">			
+			<div class="col-md-12">
+				<!--the defauld disabled btn and the actual one shown only if the three fields are valid-->
+				<input type="submit" value="Upload File" name="file" class="btn btn-primary" id="submitbtn">
+			</div>
+		</div>
+	</form>
+</div>   
     <?php INCLUDE_ONCE("tpl/footer.php") ?>
 </body>
 
 </html>
+

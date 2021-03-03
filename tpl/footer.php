@@ -1,6 +1,4 @@
-  <!-- Site footer -->
-  <footer class="footer mt-auto py-3 bg-light">
-      <div class="container">
-          <span class="text-muted">Made in Germany</span>
-      </div>
-  </footer>
+<!-- Site footer -->
+  <footer id="red">
+  <h2 class="text2">&copy; DESIGNED BY Farhad, Yannis, Moritz </h2>
+</footer>
