@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<artikelliste>
+	<artikel>
+		<art_nr>10000000</art_nr> 
+		<match>LEERGUT / PFAND</match>
+		<name>LEERGUT / PFAND (7% UST)</name>
+		<vpe>1.0000</vpe>
+	</artikel>
+	<artikel>
+		<art_nr>10000001</art_nr>
+		<match>MILCHKISTE</match>
+		<name>MILCHKISTE 5,00 € (7% UST)</name>
+		<vpe>1.0000</vpe>
+	</artikel>
+	<artikel>
+		<art_nr>10000003</art_nr>
+		<match>LEERGUT KISTE</match>
+		<name>LEERGUT KISTE 3,63 (10% MWST)</name>
+		<vpe>1.0000</vpe>
+	</artikel>
+	<artikel>
+		<art_nr>10000004</art_nr>
+		<match>LEERGUT/ PFAND</match>
+		<name>LEERGUT KISTE IFCO 3,50 (ALLG. UST)</name>
+		<vpe>1.0000</vpe>
+	</artikel>
+	<artikel>
+		<art_nr>10000005</art_nr>
+		<match>LEERGUT / PFAND</match>
+		<name>LEERGUT BÜGEL KISTE 8,- (7% UST)</name>
+		<vpe>1.0000</vpe>
+	</artikel>
+</artikelliste>
