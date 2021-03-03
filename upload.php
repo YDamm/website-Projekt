@@ -1,6 +1,6 @@
 <?php
 // Upload Pfad
-mkdir('./uploads');
+mkdir('uploads');
 $target_dir = "uploads/";
 $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
 $uploadOk = 1;
