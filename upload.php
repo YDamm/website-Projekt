@@ -1,9 +1,10 @@
 <?php
 // Upload Pfad
+mkdir('./uploads');
 $target_dir = "uploads/";
 $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
 $uploadOk = 1;
-mkdir('./uploads');
+
 $FileType = strtolower(pathinfo($target_file, PATHINFO_EXTENSION));
 
 // Überprüfen, ob die Datei bereits exitiert
