@@ -17,7 +17,7 @@
                     <p id="namefile">Beim Klicken auf dem Button, wird die Datenbank angelegt</p>
                     <br>
                     <!-- Datenbanktabellen Skript zum Erzeugen aufrufen -->
-                    <button class="btn btn-primary"><a href="db/db_tabelle_anlegen.php" target="_blank"
+                    <button class="btn btn-primary"><a href="db/db.php" target="_blank"
                             style="color:white;">erstellen</a></button>
                 </div>
             </div>
