@@ -10,9 +10,11 @@ define("DBNAME","DB_händler");// Name festlegen
 try {
 $myPDO = new PDO("mysql:host=".HOST , USER , PASS ); //der Aufbau die Verbindung 
 }
-catch(PDOException $e){ //eigene Klasse auf PHP Server
+//eigene Klasse auf PHP Server
+catch(PDOException $e){ 
     //code hier abbrechen
-    exit("Error".$e->getMessage());//Fehler anzeigen
+    //Fehler anzeigen
+    exit("Error".$e->getMessage());
 }
 //Funktion syntax Test
 function checkSQLSyntax(){
