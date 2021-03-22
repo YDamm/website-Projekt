@@ -4,7 +4,7 @@
     <!-- Standard definierte Navigationsmenü Template aufrufen -->
     <?php INCLUDE_ONCE("tpl/nav.php") ?>
     <br>
-    <h1 style="text-align:center"> DIGITALE GEMÜSE HÄNDLER </h1>
+    <h1 style="text-align:center"> DIGITALE GEMÜSEHÄNDLER </h1>
     <div class="container ">
         <div class="row" style="text-align:center">
                 <h1 class="white">Datenbank erstellen</h1>
