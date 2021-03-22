@@ -10,6 +10,9 @@
       <meta name="generator" content="Hugo 0.79.0">
       <title>Händler Startseite</title>
       <link rel="stylesheet" href="css/bootstrap.css">
+      <link rel="stylesheet" href="css/main.css">
+      <link rel="stylesheet" href="css/normalize.css">
+      <link rel="stylesheet" href="css/responsive.css">
       <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
       <link href="css/main.css" rel="stylesheet">
       <script src="js/main.js"></script>

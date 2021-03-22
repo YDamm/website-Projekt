@@ -50,6 +50,3 @@ foreach($sql as $do){
 print_r(get_class_methods($myPDO));
 echo "<script>window.close();</script>";
 ?>
-
-
-https://github.com/shawondeveloper/insertxmldata/blob/master/index.php
