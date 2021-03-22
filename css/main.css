@@ -159,9 +159,9 @@ form {
 /*just bg and body style*/
 
 .container {
-    background-color: #1E2832;
+    justify-content: center;
+    background-color: #1c2a38;
     padding-bottom: 20px;
-    margin-top: 10px;
     border-radius: 5px;
 }
 
@@ -178,6 +178,10 @@ form {
     border-radius: 5px;
     padding-bottom: 20px;
     margin-bottom: 20px;
+}
+
+.center {
+    text-align: center;
 }
 
 .white {
@@ -267,42 +271,9 @@ h4>strong {
 
 /* Footer */
 
-#red {
-    border-top: solid #A44B4B;
-    border-width: 15px;
-    background: #2E2E2E;
-    position: absolute;
-    bottom: 0;
-    height: 100%;
-    width: 100%;
-    height: 180px;
-}
-
-.text {
-    color: #424242;
-    font-family: Lato;
-    font-size: 60px;
+footer {
     text-align: center;
-    margin-top: 50px;
-}
-
-.text2 {
-    color: #424242;
-    font-family: Lato;
-    font-size: 20px;
-    text-align: center;
-    margin-top: -50px;
-}
-
-.text3 {
-    color: #424242;
-    font-family: Lato;
-    font-size: 20px;
-    text-align: center;
-    margin-top: -20px;
-    float: center;
-}
-
-#page-footer {
-    display: none !important;
+    padding: 3px;
+    background-color: rgb(20, 53, 124);
+    color: white;
 }
