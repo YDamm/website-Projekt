@@ -6,7 +6,8 @@ $uploadOk = 1;
 $FileType = strtolower(pathinfo($target_file, PATHINFO_EXTENSION));
 // Überprüfen, ob die Datei bereits exitiert
 if (file_exists($target_file)) {
-    unlink($target_file);
+    echo "Die Datei ist bereits vorhanden. ";
+    $uploadOk = 0;
 }
 // Dateigröße überprüfen MAX. 5 Megabyte
 if ($_FILES["fileToUpload"]["size"] > 5000000)
