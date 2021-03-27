@@ -3,9 +3,9 @@
 // SQL SYNTAXE GROß SCHREIBEN, AUFGRUND DER SABERKEIT UND ERKENNBARKEIT
 //Konstante
 define("HOST","localhost");//MySQLdomain
-define("USER","root");//Username zur Datenbank
-define("PASS","");//Passwort zur Datenbank
-define("DBNAME","DB_händler");// Name festlegen
+define("USER","ghaendler_root");//Username zur Datenbank
+define("PASS","root");//Passwort zur Datenbank
+define("DBNAME","ghaendler");// Name festlegen
 
 try {
 $myPDO = new PDO("mysql:host=".HOST , USER , PASS ); //der Aufbau die Verbindung 
@@ -26,14 +26,14 @@ function checkSQLSyntax(){
 $myPDO->exec("SET NAMES utf8;Set CHARACTER SET UTF8");
 //Datenbank installieren
 
-//Leerzahichen in SQL ist wichtig und muss man machen
+//Leerzeichen in SQL ist wichtig und muss man machen
 $myPDO->exec("CREATE DATABASE IF NOT EXISTS ".DBNAME); 
 
 //Datenbank anbinden
 $myPDO->exec("USE ".DBNAME); //bereitstellen
 // Datenbanken anzeigen
 
-// Tabellenaufbau //TELEFONBUCH
+// Tabellenaufbau 
 //Händler Tabelle
 $sql[] = "CREATE TABLE IF NOT EXISTS tb_artikel ( 
             id INT(10) AUTO_INCREMENT PRIMARY KEY,
