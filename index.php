@@ -4,7 +4,7 @@
     <!-- Standard definierte Navigationsmenü Template aufrufen -->
     <?php INCLUDE_ONCE("tpl/nav.php") ?>
     <br>
-    <h1 style="text-align:center"> DIGITALE GEMÜSEHÄNDLER </h1>
+    <h1 style="text-align:center"> digitale OBST und GEMUESE  </h1>
     <div class="container ">
         <div class="row" style="text-align:center">
                 <h1 class="white">Datenbank erstellen</h1>
@@ -31,7 +31,7 @@
                     <div class="col-md-6 col-md-offset-3 ">
                         <div class="btn-container " style="text-align:center">
                             <br>
-                            <p id="namefile">Nur XML Datei ist erlaubt (.xml)</p>
+                            <p id="namefile">Nur XML Datei ist erlaubt (.xml) - Bitte Datei als artikeldaten.xml benennen.</p>
                             <input type="file" name="fileToUpload" id="fileToUpload">
                             <br>
                             <br>

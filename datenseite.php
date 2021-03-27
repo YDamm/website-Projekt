@@ -47,15 +47,15 @@
      $total_record = mysqli_num_rows($pr_result );
      
      $total_page = ceil($total_record/$num_per_page);
-    // letzte Seite
+    // Button letzte Seite
      if($page>1){
         echo "<a href='?page=".($page-1)."' class='btn-btn-danger'>Previous</a>'"; 
      }
-    // Anzehl der Seiten 
+    // Anzahl der Seiten 
      for($x=1; $x<$total_page;$x++){
          echo "<a href='?page=".$x."' class='btn btn-primary'>$x</a>'";
      }
-    // nächste Seite
+    // Button nächste Seite
      if($x>$page){
         echo "<a href='?page=".($page+1)."' class='btn-btn-danger'>Next</a>'"; 
      }
